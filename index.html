@@ -6,28 +6,31 @@
         <title>Text Editor</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <script src="https://kit.fontawesome.com/16efb90edc.js" crossorigin="anonymous"></script>
+
         <link rel="stylesheet" href="styles.css">
+
+        
     </head>
     <body >
         
         <div id="editor-container">
 
             <div id="menu">
-                <button onclick="bold()">Bold</button>
-                <button onclick="underline()">Underline</button>
-                <button onclick="link()">Link</button>
-                <button onclick="copy()">Copy</button>
-                <button onclick="cut()">Cut</button>
-                <button onclick="insertHorizontalLine()">hr</button>
-                <!-- <button onclick="insertImage()">x</button>
-                <button onclick="insertHTML()">x</button>
-                <button onclick="insertOrderedList()">x</button>
-                <button onclick="insertUnorderedList()">x</button>
-                <button onclick="justifyLeft()">x</button>
-                <button onclick="justifyCenter()">x</button>
-                <button onclick="justifyRight()">x</button>
-                <button onclick="undo()">x</button>
-                <button onclick="redo()">x</button> -->
+                <button onclick="bold()"><i class="fas fa-bold"></i></button>
+                <button onclick="underline()"><i class="fas fa-underline"></i></button>
+                <button onclick="link()"><i class="fas fa-link"></i></button>
+                <button onclick="copy()"><i class="fas fa-copy"></i></button>
+                <button onclick="cut()"><i class="fas fa-cut"></i></button>
+                <button onclick="insertHorizontalLine()"><i class="fas fa-grip-lines"></i></button>
+                <button onclick="insertOrderedList()"><i class="fas fa-list-ol"></i></button>
+                <button onclick="insertUnorderedList()"><i class="fas fa-list-ul"></i></button>
+                <button onclick="justifyLeft()"><i class="fas fa-align-left"></i></button>
+                <button onclick="justifyCenter()"><i class="fas fa-align-justify"></i></button>
+                <button onclick="justifyRight()"><i class="fas fa-align-right"></i></button>
+                <button onclick="undo()"><i class="fas fa-undo"></i></button>
+                <button onclick="redo()"><i class="fas fa-redo"></i></button> 
             </div>
 
             <div id="editor" contenteditable="true" spellcheck="false"></div>
@@ -37,8 +40,4 @@
     
     </body>
 </html>
-
-
-<!-- https://codeburst.io/how-to-build-your-own-wysiwyg-editor-6002fa3f5ea8 -->
-<!-- http://help.dottoro.com/ljcvtcaw.php -->
 
