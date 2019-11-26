@@ -10,6 +10,7 @@ let checkCompatibility = () => {
 window.addEventListener('load', checkCompatibility);
 
 let editor = document.getElementById('editor');
+editor.focus();
 
 function bold() {
     document.execCommand('bold');
@@ -76,3 +77,18 @@ function redo() {
     document.execCommand('redo');
     editor.focus();
 }
+
+// add active class
+function active() {
+    let menu = document.getElementById('menu');
+    let buttons = menu.getElementsByClassName('btn');
+
+    for (let i=0; i<buttons.length; i++) {
+        buttons[i].addEventListener('click', function() {
+            this.classList.contains('active') ? this.className -= ' active' : this.className += ' active';
+        });
+    }
+}
+
+// call active function
+active();
