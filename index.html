@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Text Editor</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body >
+        
+        <div id="editor-container">
+
+            <div id="menu">
+                <button onclick="bold()">Bold</button>
+                <button onclick="underline()">Underline</button>
+                <button onclick="link()">Link</button>
+                <button onclick="copy()">Copy</button>
+                <button onclick="cut()">Cut</button>
+                <button onclick="insertHorizontalLine()">hr</button>
+                <!-- <button onclick="insertImage()">x</button>
+                <button onclick="insertHTML()">x</button>
+                <button onclick="insertOrderedList()">x</button>
+                <button onclick="insertUnorderedList()">x</button>
+                <button onclick="justifyLeft()">x</button>
+                <button onclick="justifyCenter()">x</button>
+                <button onclick="justifyRight()">x</button>
+                <button onclick="undo()">x</button>
+                <button onclick="redo()">x</button> -->
+            </div>
+
+            <div id="editor" contenteditable="true" spellcheck="false"></div>
+        </div>
+        
+        <script src="script.js"></script>
+    
+    </body>
+</html>
+
+
+<!-- https://codeburst.io/how-to-build-your-own-wysiwyg-editor-6002fa3f5ea8 -->
+<!-- http://help.dottoro.com/ljcvtcaw.php -->
+
