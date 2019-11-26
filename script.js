@@ -92,3 +92,12 @@ function active() {
 
 // call active function
 active();
+
+
+function saveToPdf() {
+    let doc = new jsPDF('p', 'pt', 'a4');
+
+    doc.addHTML(document.getElementById('editor'), function() {
+        doc.save('text.pdf');
+    });
+}

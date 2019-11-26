@@ -9,6 +9,12 @@
         
         <script src="https://kit.fontawesome.com/16efb90edc.js" crossorigin="anonymous"></script>
 
+        <!-- jsPDF -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js"></script>
+
+
         <link rel="stylesheet" href="styles.css">
 
         
@@ -31,6 +37,7 @@
                 <button class="btn" onclick="justifyRight()"><i class="fas fa-align-right"></i></button>
                 <button onclick="undo()"><i class="fas fa-undo"></i></button>
                 <button onclick="redo()"><i class="fas fa-redo"></i></button> 
+                <button onclick="saveToPdf()"><i class="fas fa-file-pdf"></i></button>
             </div>
 
             <div id="editor" contenteditable="true" spellcheck="false"></div>
